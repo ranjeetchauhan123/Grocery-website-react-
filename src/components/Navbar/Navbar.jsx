@@ -4,7 +4,7 @@ import { HiShoppingBag } from 'react-icons/hi2'
 import { IoSearch } from 'react-icons/io5'
 import { TbMenu2 } from 'react-icons/tb'
 import {Link, NavLink} from 'react-router-dom'
-import photo from '../../assets/photo.jpg'
+import photo from '../../assets/photo.JPG'
 
 
 function Navbar() {
