@@ -6,6 +6,8 @@ import Seafood from '../src/components/SeaFood/Seafood'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllProducts from './components/AllProducts/AllProducts'
 import Layout from '../src/components/Layout/Layout'
+import Fevrate from './components/Fevrate/Fevrate'
+import AddCard from './components/AddCard/AddCard'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,8 @@ const router = createBrowserRouter([
       { path: "/dairy", element: <Dairy /> },
       { path: "/seaFood", element: <Seafood /> },
       { path: "/allProducts", element: <AllProducts /> },
+      { path: "/fevrate", element: <Fevrate /> },
+      { path: "/addCard", element: <AddCard /> }
     ]
   },
 ]);

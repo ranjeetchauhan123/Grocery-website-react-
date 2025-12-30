@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner'
 import ProductList from '../ProductList/ProductList'
 import Cards from '../Cards/Cards'
 
+
 const CategoryPage = ({title, bgImage, categories=[]}) => {
 
   let filteredItems = categories.includes('All') ? ProductList
@@ -11,7 +12,7 @@ const CategoryPage = ({title, bgImage, categories=[]}) => {
     const renderProducts = filteredItems.map((product) =>{
         return(
             <div>
-              <Cards images={product.image} name={product.name}price={product.price}/>
+              <Cards images={product.image} name={product.name}price={product.price} id={product.id}/>
             </div>
         )
     })
