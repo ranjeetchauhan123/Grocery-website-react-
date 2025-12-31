@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import EditUser from "../EditUser/EditUser";
 import Form from '../SignupForm/Form'
-import Photo from "../../assets/Photo.JPG"
+import Photo from "../../assets/photo.JPG"
 
 const Users = ({ profile }) => {
   if (!profile) return null;
