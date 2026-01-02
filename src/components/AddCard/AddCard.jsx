@@ -1,18 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
-import {
-  removeFromCart,
-  clearCart,
-  increaseQty,
-  decreaseQty,
-} from "../../redux/cartSlice";
+import {  removeFromCart,  clearCart,  increaseQty,  decreaseQty,} from "../../redux/cartSlice";
 import Button from '../Button/Button'
+import { useState } from "react";
+import OrderForm from "../OrderForm/OrderForm"
 
 function AddCart() {
   const dispatch = useDispatch();
+  const [orderForm , setOrderForm] = useState(false)
 
-  const cartItems = useSelector(
-    (state) => state.cart.cartItems
-  );
+  const cartItems = useSelector((state) => state.cart.cartItems);
 
   // Total amount
   const totalAmount = cartItems.reduce(
@@ -118,8 +114,11 @@ function AddCart() {
         <h3 className="text-xl font-semibold">
           Total: ₹{totalAmount.toFixed(2)}
         </h3>
-
-        <Button content="Place Order" />
+        <div onClick={() => setOrderForm(!orderForm)}>
+          <Button content="Place Order" />
+        </div>
+        <OrderForm orderForm={orderForm} setOrderForm={setOrderForm} />
+        
       </div>
     </div>
   );

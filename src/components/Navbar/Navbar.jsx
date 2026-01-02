@@ -44,9 +44,9 @@ function Navbar() {
                     {/* Desktop Menus */}
                     <ul className="md:flex items-center gap-x-15 hidden">
                         <li><NavLink to="/" className="font-semibold tracking-wider text-orange-500">Home</NavLink></li>
-                        <li><a href="" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">About Us</a></li>
-                        <li><a href="" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Process</a></li>
-                        <li><a href="" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Contact Us</a></li>
+                        <li><NavLink to="/#categories" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Categories</NavLink></li>
+                        <li><NavLink to="/#products" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Products</NavLink></li>
+                        <li><NavLink to="/#process" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Process</NavLink></li>
                     </ul>
 
                     {/* Desktop Search */}
@@ -129,9 +129,9 @@ function Navbar() {
 
                         {/* Mobile Menus */}
                         <a href="" className="block font-semibold text-orange-500 cursor-pointer ">Home</a>
-                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">About Us</a>
+                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Categories</a>
+                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Products</a>
                         <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Process</a>
-                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Contact Us</a>
                     </div>
                 </div>
 

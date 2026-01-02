@@ -7,6 +7,7 @@ import { addToCart } from "../../redux/cartSlice";
 const Favourite = () => {
   const dispatch = useDispatch();
   const favourites = useSelector((state) => state.favourite.items);
+  
 
 
   return (

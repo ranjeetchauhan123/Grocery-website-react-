@@ -14,11 +14,20 @@ function Home() {
     return (
         <div>
             <Hero />
-            <Category />
+            <div id="categories">
+                <Category />
+            </div>
+            
             <Values />
-            <Products />
+            <div id="products">
+                <Products />
+            </div>
+            
             <Discount />
-            <Process />
+            <div id="process">
+                <Process />
+            </div>
+            
             <Testimonial />
         </div>
     )
