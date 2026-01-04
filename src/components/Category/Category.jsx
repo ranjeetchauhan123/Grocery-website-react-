@@ -9,7 +9,7 @@ const Category = () => {
 
   const renderCards = category.map(card => {
     return (
-      <div key={card.id}
+      <div key={card.id} id='categories'
         className="flex-1 rounded-xl hover:shadow-xl transition-shadow duration-300 mt-20">
         {/* Image */}
         <div className="w-full min-h-[25vh] md:min-h-[30vh] relative -mb-10 flex justify-center">

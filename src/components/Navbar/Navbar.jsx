@@ -3,7 +3,8 @@ import { GoHeartFill } from 'react-icons/go'
 import { HiShoppingBag } from 'react-icons/hi2'
 import { IoSearch } from 'react-icons/io5'
 import { TbMenu2 } from 'react-icons/tb'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { HashLink } from "react-router-hash-link"
 import photo from '../../assets/photo.JPG'
 import Users from '../User/Users'
 
@@ -36,17 +37,17 @@ function Navbar() {
                 <nav className="max-w-[1400px] mx-auto px-10 h-[13vh] flex justify-between items-center">
 
                     {/* logo */}
-                    <Link to='/' className="text-3xl font-bold">
+                    <HashLink smooth to='/#home' className="text-3xl font-bold">
                         Gr<span className="text-orange-500 uppercase">O</span>cify
-                    </Link>
+                    </HashLink>
 
 
                     {/* Desktop Menus */}
                     <ul className="md:flex items-center gap-x-15 hidden">
-                        <li><NavLink to="/" className="font-semibold tracking-wider text-orange-500">Home</NavLink></li>
-                        <li><NavLink to="/#categories" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Categories</NavLink></li>
-                        <li><NavLink to="/#products" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Products</NavLink></li>
-                        <li><NavLink to="/#process" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Process</NavLink></li>
+                        <li><HashLink smooth to="/#home" className="font-semibold tracking-wider text-orange-500">Home</HashLink></li>
+                        <li><HashLink smooth to="/#categories" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Categories</HashLink></li>
+                        <li><HashLink smooth to="/#products" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Products</HashLink></li>
+                        <li><HashLink smooth to="/#process" className="font-semibold tracking-wider text-zinc-800 hover:text-orange-500">Process</HashLink></li>
                     </ul>
 
                     {/* Desktop Search */}
@@ -128,10 +129,10 @@ function Navbar() {
                         </div>
 
                         {/* Mobile Menus */}
-                        <a href="" className="block font-semibold text-orange-500 cursor-pointer ">Home</a>
-                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Categories</a>
-                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Products</a>
-                        <a href="" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Process</a>
+                        <HashLink smooth to="/#home" className="block font-semibold text-orange-500 cursor-pointer ">Home</HashLink>
+                        <HashLink smooth to="/#categories" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Categories</HashLink>
+                        <HashLink smooth to="/#products" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Products</HashLink>
+                        <HashLink smooth to="/#process" className="block font-semibold text-zinc-800 hover:text-orange-600  cursor-pointer">Process</HashLink>
                     </div>
                 </div>
 

@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       { path: "/seaFood", element: <Seafood /> },
       { path: "/allProducts", element: <AllProducts /> },
       { path: "/fevrate", element: <Fevrate /> },
-      { path: "/addCard", element: <AddCard /> }
+      { path: "/addCard", element: <AddCard /> },
     ]
   },
 ]);
