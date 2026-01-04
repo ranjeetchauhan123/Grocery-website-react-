@@ -33,7 +33,10 @@ function Navbar() {
 
     return (
         <>
-            <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${shadow ? 'drop-shadow-[0_2px_10px_rgba(0,0,0,0.2)]' : ''}`}>
+<header
+  className={`fixed top-0 left-0 right-0 z-[999] bg-white
+  ${shadow ? "shadow-md" : ""}`}
+>
                 <nav className="max-w-[1400px] mx-auto px-10 h-[13vh] flex justify-between items-center">
 
                     {/* logo */}
@@ -61,7 +64,7 @@ function Navbar() {
                     </div>
 
                     {/* icons */}
-                    <div className='flex items-center gap-x-5'>
+                    <div className='flex items-center gap-x-3 md:gap-x-5'>
 
                         <Link to={'/Fevrate'}
                             className='text-zinc-800 text-2xl relative '>
