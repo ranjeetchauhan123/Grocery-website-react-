@@ -7,8 +7,7 @@ import { Link } from 'react-router-dom'
 import { HashLink } from "react-router-hash-link"
 import photo from '../../assets/photo.JPG'
 import Users from '../User/Users'
-
-import { useSelector } from 'react-redux'
+import {  useSelector } from 'react-redux'
 
 
 function Navbar() {
@@ -19,8 +18,6 @@ function Navbar() {
 
     const fevCount = useSelector((state) => state.favourite?.items?.length || 0);
     const cartCount = useSelector((state) => state.cart?.cartItems?.length || 0);
-
-
 
     useEffect(() => {
         const handleScroll = () => {
