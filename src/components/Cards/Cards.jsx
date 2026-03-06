@@ -30,7 +30,7 @@ function Cards({ images, name, price }) {
       />
 
       <div className="group bg-white border border-gray-200 p-4 sm:p-5 rounded-xl transition-all duration-300
-          hover:scale-105 hover:shadow-xl hover:border-green-400">
+          hover:scale-101 hover:shadow-xl hover:border-green-400">
 
         {/* Icons */}
         <div className="flex justify-between items-center">
