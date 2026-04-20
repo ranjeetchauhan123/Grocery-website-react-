@@ -31,16 +31,12 @@ function Navbar() {
     return (
         <>
 <header
-  className={`fixed top-0 left-0 right-0 z-[999] bg-white
-  ${shadow ? "shadow-md" : ""}`}
->
+  className={`fixed top-0 left-0 right-0 z-[999] bg-white ${shadow ? "shadow-md" : ""}`}>
                 <nav className="max-w-[1400px] mx-auto px-10 h-[13vh] flex justify-between items-center">
-
                     {/* logo */}
                     <HashLink smooth to='/#home' className="text-3xl font-bold">
                         Gr<span className="text-orange-500 uppercase">O</span>cify
                     </HashLink>
-
 
                     {/* Desktop Menus */}
                     <ul className="md:flex items-center gap-x-15 hidden">
@@ -59,7 +55,7 @@ function Navbar() {
                             <IoSearch />
                         </button>
                     </div>
-
+                    
                     {/* icons */}
                     <div className='flex items-center gap-x-3 md:gap-x-5'>
 
