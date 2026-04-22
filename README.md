@@ -30,5 +30,4 @@ Navigation: React Router Hash Link
 
 # project Link (https://grocery-website-react-gamma.vercel.app/)
 
-
-Just tell 👍
+Author : Ranjeet Chauhan
